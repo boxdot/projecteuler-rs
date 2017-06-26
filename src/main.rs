@@ -3,6 +3,7 @@ mod p002;
 mod p003;
 mod p004;
 mod p005;
+mod p006;
 
 fn main() {
     println!("p001: {}", p001::solve());
@@ -10,4 +11,5 @@ fn main() {
     println!("p003: {}", p003::solve());
     println!("p004: {:?}", p004::solve());
     println!("p005: {}", p005::solve());
+    println!("p006: {}", p006::solve());
 }
