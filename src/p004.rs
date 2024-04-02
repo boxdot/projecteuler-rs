@@ -4,8 +4,8 @@ fn num_digits(n: u32) -> u32 {
     let mut n = n;
     let mut num = 0;
     while n > 0 {
-        n = n / 10;
-        num = num + 1;
+        n /= 10;
+        num += 1;
     }
     num
 }
@@ -13,7 +13,7 @@ fn num_digits(n: u32) -> u32 {
 fn ith_digit(n: u32, i: u32) -> u32 {
     let mut n = n;
     for _ in 0..i {
-        n = n / 10;
+        n /= 10;
     }
     n % 10
 }

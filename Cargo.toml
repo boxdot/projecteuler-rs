@@ -2,5 +2,6 @@
 name = "projecteuler-rs"
 version = "0.1.0"
 authors = ["boxdot <d@zerovolt.org>"]
+edition = "2021"
 
 [dependencies]

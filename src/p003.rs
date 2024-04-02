@@ -5,9 +5,9 @@ fn largest_prime_factor(n: u64) -> u64 {
 
     let mut prev_factor = 1;
     if n % 2 == 0 {
-        n = n / 2;
+        n /= 2;
         while n % 2 == 0 {
-            n = n / 2;
+            n /= 2;
         }
         prev_factor = 2
     }
@@ -17,9 +17,9 @@ fn largest_prime_factor(n: u64) -> u64 {
     while n > 1 && factor <= max_factor {
         if n % factor == 0 {
             prev_factor = factor;
-            n = n / factor;
+            n /= factor;
             while n % factor == 0 {
-                n = n / factor;
+                n /= factor;
             }
             max_factor = (n as f64).sqrt() as u64;
         }
